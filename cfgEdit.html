@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="script.js"></script>
+	<title>CFG edit</title>
+</head>
+<body>
+	<h1>CFG Edit</h1>
+
+	<form name="CFGCreation">
+
+		<p>Normal:</p>
+		<!-- type -->
+		Type:<select id="type" onchange="changeType()">
+			<option value="Normal">Normal</option>	
+			<option value="Command">Command</option>	
+			<!-- <option value="Fueltank">Fueltank</option> -->
+		</select><br>
+		<!-- type -->
+
+		<!-- Name -->
+		Name:<input type="text" name="name" id="name"><br>
+		<!-- Name -->
+
+		<!-- Module -->
+		Module:<input type="text" name="module" id="module" value="Part"><br>
+		<!-- Module -->
+
+		<!-- Author -->
+		Author:<input type="text" name="author" id="author"><br>
+		<!-- Author -->
+
+		<!-- title -->
+		Title:<input type="text" name="title" id="title"><br>
+		<!-- title -->
+
+		<!-- manufacturer -->
+		Manufacturer:<input type="text" name="manufacturer" id="manufacturer"><br>
+		<!-- manufacturer -->
+
+		<!-- description -->
+		Description:<input type="text" name="description" id="description"><br>
+		<!-- description -->
+
+		<!-- Scale -->
+		Scale:<input value="1" type="number" step="0.001" name="scale" min="0" id="scale" name="scale"><br>
+		<!-- Scale -->
+
+		<!-- Rescale -->
+		Rescale factor:<input value="0" type="number" step="0.001" name="rescalefactor" min="0" id="Rescalefactor"><br>
+		<!-- Rescale -->
+
+		<!-- Attachment rules -->
+		<div id="AttachmentRules">
+		Attachment rules:<br>
+		-Stack attachment:<input value="0" type="number" step="1" name="attachRules0" min="0" max="1" id="attachRules0"><br>
+		-Surface attachment:<input value="0" type="number" step="1" name="attachRules1" min="0" max="1" id="attachRules1"><br>
+		-Allow stack:<input value="0" type="number" step="1" name="attachRules2" min="0" max="1" id="attachRules2"><br>
+		-Allow surface attachment:<input value="0" type="number" step="1" name="attachRules3" min="0" max="1" id="attachRules3"><br>
+		-Allow collision<input value="0" type="number" step="1" name="attachRules4" min="0" max="1" id="attachRules4"><br>
+		</div>
+		<!-- Attachment rules -->
+
+		<!-- Entry cost -->
+		Entry cost<input value="0" type="number" step="1" name="entryCost" min="0" id="entryCost"><br>
+		<!-- Entry cost -->
+
+		<!-- Entry cost -->
+		Cost<input value="0" type="number" step="1" name="cost" min="0" id="cost"><br>
+		<!-- Entry cost -->
+		
+		<!-- Catagory -->
+		Catagory:<select id="category">
+			<option value="Command">Command</option>
+			<option value="FuelTank">FuelTank</option>
+			<option value="Engine">Engine</option>
+			<option value="Aero">Aero</option>
+			<option value="Electrical">Electrical</option>
+			<option value="Structural">Structural</option>
+			<option value="Utility">Utility</option>
+			<option value="Wheel">Wheel</option>
+		</select><br>
+		<!-- Catagory -->
+
+
+		<!-- Tech requred -->
+		Tech required:<select id="TechRequired">
+  			<option value="start">start</option>
+  			<option value="basicRocketry">basicRocketry</option>
+  			<option value="generalRocketry">generalRocketry</option>
+  			<option value="stability">stability</option>
+  			<option value="survivability">survivability</option>
+  			<option value="advRocketry">advRocketry</option>
+  			<option value="generalConstruction">generalConstruction</option>
+  			<option value="flightControl">flightControl</option>
+	  		<option value="scienceTech">scienceTech</option>
+	  		<option value="heavyRocketry">heavyRocketry</option>
+  			<option value="fuelSystems">fuelSystems</option>
+  			<option value="advConstruction">advConstruction</option>
+  			<option value="aerodynamicSystems">aerodynamicSystems</option>
+  			<option value="advFlightControl">advFlightControl</option>
+  			<option value="electrics">electrics</option>
+  			<option value="spaceExploration">spaceExploration</option>
+	  		<option value="landing">landing</option>
+  			<option value="heavierRocketry">heavierRocketry</option>
+  			<option value="specializedConstruction">specializedConstruction</option>
+  			<option value="actuators">actuators</option>
+  			<option value="supersonicFlight">supersonicFlight</option>
+	  		<option value="specializedControl">specializedControl</option>
+  			<option value="precisionEngineering">precisionEngineering</option>
+  			<option value="advElectrics">advElectrics</option>
+  			<option value="advExploration">advExploration</option>
+  			<option value="advLanding">advLanding</option>
+  			<option value="nuclearPropulsion">nuclearPropulsion</option>
+  			<option value="advMetalworks">advMetalworks</option>
+  			<option value="composites">composites</option>
+  			<option value="advAerodynamics">advAerodynamics</option>
+  			<option value="highAltitudeFlight">highAltitudeFlight</option>
+  			<option value="largeControl">largeControl</option>
+  			<option value="unmannedTech">unmannedTech</option>
+  			<option value="ionPropulsion">ionPropulsion</option>
+  			<option value="largeElectrics">largeElectrics</option>
+  			<option value="electronics">electronics</option>
+  			<option value="fieldScience">fieldScience</option>
+  			<option value="veryHeavyRocketry">veryHeavyRocketry</option>
+  			<option value="metaMaterials">metaMaterials</option>
+  			<option value="heavyAerodynamics">heavyAerodynamics</option>
+  			<option value="hypersonicFlight">hypersonicFlight</option>
+  			<option value="advUnmanned">advUnmanned</option>
+  			<option value="specializedElectrics">specializedElectrics</option>
+  			<option value="advScienceTech">advScienceTech</option>
+  			<option value="advancedMotors">advancedMotors</option>
+		</select><br>
+		<!-- Tech requred -->
+
+		<p>Command:</p>
+		Crew capacity:<input value="0" type="number" step="1" name="CrewCapacity" min="0" id="CrewCapacity"><br>
+		Electricity per second:<input value="0" type="number" step="0.01" name="Electricity per second" id="EPS"><br>
+		Has hibernation:<select id="hasHibernation">
+			<option value="True">True</option>
+			<option value="False">False</option>
+		</select><br>
+
+		<!-- Final buttons -->
+		<input type="button" value="Submit" onclick="cfgSubmit()">
+		<!-- Final buttons -->
+	</form> <br>
+
+	<textarea cols="128" rows="24" id="finalCFG"></textarea>
+
+</body>
+</html>
