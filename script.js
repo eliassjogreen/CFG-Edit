@@ -8,6 +8,7 @@ function cfgSubmit () {
 		"name = " + document.getElementById('name').value + "\r\n" + 
 		"module = " + document.getElementById('module').value + "\r\n" + 
 		"author = " + document.getElementById('author').value + "\r\n" + 
+		"mesh = " + document.getElementById('mesh').value + "\r\n" +
 		"title = " + document.getElementById('title').value + "\r\n" +
 		"manufacturer = " + document.getElementById('manufacturer').value + "\r\n" +
 		"description = " + document.getElementById('description').value + "\r\n" +
@@ -31,3 +32,7 @@ function cfgSubmit () {
 function changeType() {
 	type = document.getElementById('type').options[document.getElementById('type').selectedIndex].value
 }
+
+function copyToClipboard(text) {
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+  }
