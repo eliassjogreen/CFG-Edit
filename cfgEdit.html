@@ -12,70 +12,68 @@
 
 		<p>Normal:</p>
 		<!-- type -->
-		Type:<select id="type" onchange="changeType()">
+		<p>Type:<select id="type" onchange="changeType()">
 			<option value="Normal">Normal</option>	
 			<option value="Command">Command</option>	
 			<!-- <option value="Fueltank">Fueltank</option> -->
-		</select><br>
+		</select></p>
 		<!-- type -->
 
 		<!-- Name -->
-		Name:<input type="text" name="name" id="name"><br>
+		<p>Name:<input type="text" name="name" id="name"></p>
 		<!-- Name -->
 
 		<!-- Module -->
-		Module:<input type="text" name="module" id="module" value="Part"><br>
+		<p>Module:<input type="text" name="module" id="module" value="Part"></p>
 		<!-- Module -->
 
 		<!-- Author -->
-		Author:<input type="text" name="author" id="author"><br>
+		<p>Author:<input type="text" name="author" id="author"></p>
 		<!-- Author -->
 
 		<!-- Mesh -->
-		Mesh:<input value="model.mu" type="text" name="mesh" id="mesh"><br>
+		<p>Mesh:<input value="model.mu" type="text" name="mesh" id="mesh"></p>
 		<!-- Mesh -->
 
 		<!-- title -->
-		Title:<input type="text" name="title" id="title"><br>
+		<p>Title:<input type="text" name="title" id="title"></p>
 		<!-- title -->
 
 		<!-- manufacturer -->
-		Manufacturer:<input type="text" name="manufacturer" id="manufacturer"><br>
+		<p>Manufacturer:<input type="text" name="manufacturer" id="manufacturer"></p>
 		<!-- manufacturer -->
 
 		<!-- description -->
-		Description:<input type="text" name="description" id="description"><br>
+		<p>Description:<input type="text" name="description" id="description"></p>
 		<!-- description -->
 
 		<!-- Scale -->
-		Scale:<input value="1" type="number" step="0.001" name="scale" min="0" id="scale" name="scale"><br>
+		<p>Scale:<input value="1" type="number" step="0.001" name="scale" min="0" id="scale" name="scale"></p>
 		<!-- Scale -->
 
 		<!-- Rescale -->
-		Rescale factor:<input value="0" type="number" step="0.001" name="rescalefactor" min="0" id="Rescalefactor"><br>
+		<p>Rescale factor:<input value="0" type="number" step="0.001" name="rescalefactor" min="0" id="Rescalefactor"></p>
 		<!-- Rescale -->
 
 		<!-- Attachment rules -->
-		<div id="AttachmentRules">
-		Attachment rules:<br>
-		-Stack attachment:<input value="0" type="number" step="1" name="attachRules0" min="0" max="1" id="attachRules0"><br>
-		-Surface attachment:<input value="0" type="number" step="1" name="attachRules1" min="0" max="1" id="attachRules1"><br>
-		-Allow stack:<input value="0" type="number" step="1" name="attachRules2" min="0" max="1" id="attachRules2"><br>
-		-Allow surface attachment:<input value="0" type="number" step="1" name="attachRules3" min="0" max="1" id="attachRules3"><br>
-		-Allow collision<input value="0" type="number" step="1" name="attachRules4" min="0" max="1" id="attachRules4"><br>
-		</div>
+		<p>Attachment rules:</p>
+		<p>-Stack attachment:<input value="0" type="number" step="1" name="attachRules0" min="0" max="1" id="attachRules0"></p>
+		<p>-Surface attachment:<input value="0" type="number" step="1" name="attachRules1" min="0" max="1" id="attachRules1"></p>
+		<p>-Allow stack:<input value="0" type="number" step="1" name="attachRules2" min="0" max="1" id="attachRules2"></p>
+		<p>-Allow surface attachment:<input value="0" type="number" step="1" name="attachRules3" min="0" max="1" id="attachRules3"></p>
+		<p>-Allow collision<input value="0" type="number" step="1" name="attachRules4" min="0" max="1" id="attachRules4"></p>
 		<!-- Attachment rules -->
 
 		<!-- Entry cost -->
-		Entry cost<input value="0" type="number" step="1" name="entryCost" min="0" id="entryCost"><br>
+		<p>Entry cost<input value="0" type="number" step="1" name="entryCost" min="0" id="entryCost"></p>
 		<!-- Entry cost -->
 
 		<!-- Entry cost -->
-		Cost<input value="0" type="number" step="1" name="cost" min="0" id="cost"><br>
+		<p>Cost<input value="0" type="number" step="1" name="cost" min="0" id="cost"></p>
 		<!-- Entry cost -->
 		
 		<!-- Catagory -->
-		Catagory:<select id="category">
+		<p>Catagory:<select id="category">
 			<option value="Command">Command</option>
 			<option value="FuelTank">FuelTank</option>
 			<option value="Engine">Engine</option>
@@ -84,12 +82,12 @@
 			<option value="Structural">Structural</option>
 			<option value="Utility">Utility</option>
 			<option value="Wheel">Wheel</option>
-		</select><br>
+		</select></p>
 		<!-- Catagory -->
 
 
 		<!-- Tech requred -->
-		Tech required:<select id="TechRequired">
+		<p>Tech required:<select id="TechRequired">
   			<option value="start">start</option>
   			<option value="basicRocketry">basicRocketry</option>
   			<option value="generalRocketry">generalRocketry</option>
@@ -135,23 +133,24 @@
   			<option value="specializedElectrics">specializedElectrics</option>
   			<option value="advScienceTech">advScienceTech</option>
   			<option value="advancedMotors">advancedMotors</option>
-		</select><br>
+		</select></p>
 		<!-- Tech requred -->
 
 		<p>Command:</p>
-		Crew capacity:<input value="0" type="number" step="1" name="CrewCapacity" min="0" id="CrewCapacity"><br>
-		Electricity per second:<input value="0" type="number" step="0.01" name="Electricity per second" id="EPS"><br>
-		Has hibernation:<select id="hasHibernation">
+		<p>Crew capacity:<input value="0" type="number" step="1" name="CrewCapacity" min="0" id="CrewCapacity"></p>
+		<p>Electricity per second:<input value="0" type="number" step="0.01" name="Electricity per second" id="EPS"></p>
+		<p>Has hibernation:<select id="hasHibernation">
 			<option value="True">True</option>
 			<option value="False">False</option>
-		</select><br>
+		</select></p>
 
 		<!-- Final buttons -->
-		<input type="button" value="Submit" onclick="cfgSubmit()">
+		<p><input type="button" value="Submit" onclick="cfgSubmit()"></p>
 		<!-- Final buttons -->
-	</form> <br>
 
-	<textarea cols="128" rows="24" id="finalCFG"></textarea>
+	</form> </p>
+	<p>Finished CFG: <input type="button" value="Copy to clipboard" onclick="copyToClipboard(document.getElementById('finalCFG').value)"></p><textarea cols="64" rows="24" id="finalCFG"></textarea>
+
 
 </body>
 </html>
