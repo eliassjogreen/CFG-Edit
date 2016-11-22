@@ -12,6 +12,14 @@ p {
     padding: 5px;
 }
 
+div {
+    border-radius: 7px;
+}
+
+h1 {
+    font-size: 600%;
+}
+
 input {
     position: absolute;
     left: 160px;
