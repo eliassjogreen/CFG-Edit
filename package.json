@@ -1,0 +1,19 @@
+{
+  "name": "cfg-edit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliassjogreen/CFG-Edit.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliassjogreen/CFG-Edit/issues"
+  },
+  "homepage": "https://github.com/eliassjogreen/CFG-Edit#readme"
+}
