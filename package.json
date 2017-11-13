@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eliassjogreen/CFG-Edit/issues"
   },
-  "homepage": "https://github.com/eliassjogreen/CFG-Edit#readme"
+  "homepage": "https://github.com/eliassjogreen/CFG-Edit#readme",
+  "dependencies": {
+    "kspcfg": "^1.0.1"
+  }
 }

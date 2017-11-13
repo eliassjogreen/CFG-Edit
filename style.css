@@ -4,7 +4,6 @@
 }
 
 .addOpt {
-    background-color: lightgray;
     display: inline-block;
     padding-bottom: 2px;
     padding-left: 10px;
@@ -13,7 +12,6 @@
 }
 
 .config {
-    background-color: lightgray;
     padding-bottom: 2px;
     padding-left: 10px;
     padding-right: 10px;
